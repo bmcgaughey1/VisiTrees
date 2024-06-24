@@ -16,7 +16,7 @@ An excellent publication by Dr. Kim D. Coder (Coder 2018) describes tree growth 
 
 ![Tree growth forms](./images/CrownArchitectures.png)
 
-Given these base growth forms, Coder defines a series of generalized crown shapes useful for developing tree models. There may be more detail in these shapes than needed for abstract tree models. In addition, many (most?) species exhibit different forms depending on their competative environment, age, and degree of crown damage. Nonetheless, these forms provide a set of terminology useful for our tree database.
+Given these basic growth forms, Coder defines a series of generalized crown shapes useful for developing tree models. There may be more detail in these shapes than needed for abstract tree models. In addition, many (most?) species exhibit different forms depending on their competative environment, age, and degree of crown damage. Nonetheless, these forms provide a set of terminology useful for our tree database.
 
 ![Tree crown shape names](./images/CrownShapes.png)
 ![Tree crown shapes](./images/CrownShapeImages.png)
