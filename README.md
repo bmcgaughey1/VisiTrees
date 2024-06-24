@@ -14,12 +14,12 @@ An excellent publication by Dr. Kim D. Coder describes tree growth processes and
 * Decurrent (deliquescent) tree forms have many dominant branches with a spreading crown form caused by lateral branches growing at similar rates as the main axis terminal (leader), or the terminal continues to die with lateral branches rebranching continuously (so no one central axis develops, but many spreading branches).
 * Excurrent tree form has a single dominant axis (leader) and forms a conical shaped crown as the terminal elongates more annually than lateral branches (a distinct main axis and many short secondary branches.
 
-![Tree growth forms](./images/CrownArchitectures.png)
+<center>![Tree growth forms](./images/CrownArchitectures.png)</center>
 
 Given these base growth forms, we can define a series of generalized crown shapes useful for developing tree models.
 
-![Tree crown shape names](./images/CrownShapes.png)
-![Tree crown shapes](./images/CrownShapeImages.png)
+<center>![Tree crown shape names](./images/CrownShapes.png)</center>
+<center>![Tree crown shapes](./images/CrownShapeImages.png)</center>
 
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
