@@ -7,7 +7,7 @@ The initial tree lists came from the Forest Inventory and Analysis (FIA) program
 A subset of the FIA tree list that includes FIA species codes <1000 was extracted to serve as the starting point for VisiTrees. Columns were rearranged and some were deleted to create the MasterSpeciesList.
 
 # Tree growth forms
-An excellent publication by Dr. Kim D. Coder describes tree growth processes and presents the most common overall growth patterns and crown shaped. Basic growth forms are:
+An excellent publication by Dr. Kim D. Coder describes tree growth processes and presents the most common overall growth patterns and a set of crown shapes. Basic growth forms are:
 * Abcurrent tree forms have an aerial terminal bud and leaves (palm-like).
 * Adcurrent tree forms have basal buds and leaves (ground hugging yucca-like).
 * Bicurrent tree forms have irregular forked branching usually with thick green stems (catus-like).
@@ -16,6 +16,10 @@ An excellent publication by Dr. Kim D. Coder describes tree growth processes and
 
 ![Tree growth forms](./images/CrownArchitectures.png)
 
+Given these base growth forms, we can define a series of generalized crown shapes useful for developing tree models.
+
+![Tree crown shape names](./images/CrownShapes.png)
+![Tree crown shapes](./images/CrownShapeImages.png)
 
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
