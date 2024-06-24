@@ -7,19 +7,19 @@ The initial tree lists came from the Forest Inventory and Analysis (FIA) program
 A subset of the FIA tree list that includes FIA species codes <1000 was extracted to serve as the starting point for VisiTrees. Columns were rearranged and some were deleted to create the MasterSpeciesList.
 
 # Tree growth forms
-An excellent publication by Dr. Kim D. Coder describes tree growth processes and presents the most common overall growth patterns and a set of crown shapes. Basic growth forms are:
+An excellent publication by Dr. Kim D. Coder (Coder 2018) describes tree growth processes and presents the most common overall growth patterns and a set of crown shapes. Basic growth forms are:
 * Abcurrent tree forms have an aerial terminal bud and leaves (palm-like).
 * Adcurrent tree forms have basal buds and leaves (ground hugging yucca-like).
 * Bicurrent tree forms have irregular forked branching usually with thick green stems (catus-like).
 * Decurrent (deliquescent) tree forms have many dominant branches with a spreading crown form caused by lateral branches growing at similar rates as the main axis terminal (leader), or the terminal continues to die with lateral branches rebranching continuously (so no one central axis develops, but many spreading branches).
 * Excurrent tree form has a single dominant axis (leader) and forms a conical shaped crown as the terminal elongates more annually than lateral branches (a distinct main axis and many short secondary branches.
 
-<center>![Tree growth forms](./images/CrownArchitectures.png)</center>
+![Tree growth forms](./images/CrownArchitectures.png)
 
-Given these base growth forms, we can define a series of generalized crown shapes useful for developing tree models.
+Given these base growth forms, Coder defines a series of generalized crown shapes useful for developing tree models. There may be more detail in these shapes than needed for abstract tree models. In addition, many (most?) species exhibit different forms depending on their competative environment, age, and degree of crown damage. Nonetheless, these forms provide a set of terminology useful for our tree database.
 
-<center>![Tree crown shape names](./images/CrownShapes.png)</center>
-<center>![Tree crown shapes](./images/CrownShapeImages.png)</center>
+![Tree crown shape names](./images/CrownShapes.png)
+![Tree crown shapes](./images/CrownShapeImages.png)
 
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
