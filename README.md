@@ -65,6 +65,7 @@ Assets for each tree record would include:
 * RGB bole color
 * Whole tree image
 * Bark image
+* Stump image (cut surface)
 * Crown image
 * Overhead image
 
