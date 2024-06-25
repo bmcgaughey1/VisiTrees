@@ -69,6 +69,7 @@ Assets for each tree record would include:
 * Crown image
 * Overhead image
 
+![Tree image](./assets/PSME_tree.png) ![Bark image](./assets/PSME_bark.png) ![Stump image](./assets/PSME_stump.png) ![Crown image](./assets/PSME_crown.png) ![Overhead image](./PSME_overhead.png)
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
 Van Pelt, R.; Sillett, S.C. Crown development of coastal pseudotsuga menziesii, including a conceptual model for tall conifers. (Ecol. Monogr. 2008, 78, 283–311)[https://esajournals.onlinelibrary.wiley.com/doi/10.1890/07-0158.1].
