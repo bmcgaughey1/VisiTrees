@@ -54,7 +54,7 @@ Tree and crown damage are mostly intended for damage related to insects and dise
 Most tree species change their appearance through the course of the year. Most obvious are deciduous trees whose foliage changes color in the fall and is absent in the winter and early spring. However, conifers also have different appearances when actively growing compared to periods of slow or no growth. For the initial database, valid time-of-year values are DORMANT, SUMMER, and FALL. For deciduous broadleaf species, DORMANT would have no foliage SUMMER would have green foliage, and FALL would have foliage with characteristic colors for the species. For conifer species DORMANT and FALL would have uniform green foliage and SUMMER would have a mix of dark and light green foliage with lighter green toward the branch tips.
 
 # Putting it all together
-If we assume that the basic crown shape is consistent for a species, the growth form and crown shape become attributes of the species and do not change regardless of the growing condition, tree condition, damage class, or time of year. The [simplified record structure](## the actual record has more fields) for our database looks like this:
+If we assume that the basic crown shape is consistent for a species, the growth form and crown shape become attributes of the species and do not change regardless of the growing condition, tree condition, damage class, or time of year. The [simplified record structure](## "the actual record has more fields") for our database looks like this:
 
 ![Tree record](./images/datarecord.png)
 
