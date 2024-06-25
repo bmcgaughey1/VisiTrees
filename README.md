@@ -8,8 +8,8 @@ A subset of the FIA tree list that includes FIA species codes <1000 was extracte
 
 Beginning with the species list, the database adds fields describing the basic tree form and tree condition. Additional attributes can be used to provide models representing various damage agents or times of year. While this provides a tremendous amount of flexibility, it quickly adds up to lots of tree models and texture images. For the initial database, not all details are needed.
 
-# Tree growth forms
-An excellent publication by Dr. Kim D. Coder (Coder 2018) describes tree growth processes and presents the most common overall growth patterns and a set of crown shapes. Basic growth forms are:
+# Tree growth forms and crown shapes
+The shape of the crown is generally consistent for a species until the trees reach old age (Van Pelt and Sillett, 2008). For visualization applications, assuming a consistent shape for a species helps viewers recognize the species. While some species may change their appearance over their life span, tracking the shape changes introduces unnecessary complications to the database. An excellent publication by Dr. Kim D. Coder (Coder, 2018) describes tree growth processes and presents the most common overall growth patterns and a set of crown shapes. Basic growth forms are:
 * Abcurrent tree forms have an aerial terminal bud and leaves (palm-like).
 * Adcurrent tree forms have basal buds and leaves (ground hugging yucca-like).
 * Bicurrent tree forms have irregular forked branching usually with thick green stems (catus-like).
@@ -17,12 +17,15 @@ An excellent publication by Dr. Kim D. Coder (Coder 2018) describes tree growth 
 * Excurrent tree form has a single dominant axis (leader) and forms a conical shaped crown as the terminal elongates more annually than lateral branches (a distinct main axis and many short secondary branches.
 The most common of these are excurrent (conifers) and decurrent (hardwoods).
 
-![Tree growth forms](./images/CrownArchitectures.png)
+[Tree growth forms](./images/CrownArchitectures.png)
 
 Given these basic growth forms, Coder defines a series of generalized crown shapes useful for developing tree models. There may be more detail in these shapes than needed for abstract tree models. In addition, many (most?) species exhibit different forms depending on their competative environment, age, and degree of crown damage. Nonetheless, these forms provide a set of terminology useful for our tree database.
 
 ![Tree crown shape names](./images/CrownShapes.png)
 ![Tree crown shapes](./images/CrownShapeImages.png)
+
+# Growing condition
+As mentioned above, most tree species have different crown shapes when grown in the open compared to a closed stand. Stand density may be driven by the overall climatic conditions or through managment activites or disturbance. For parts of the country where mositure is the limiting growth factor, open stand conditions are common and trees tend to have longer and wider crowns. In contrast, moister conditions lead to more closed-canopy stands where trees tend to have more foliage near the top of the tree and, overall, narrower crowns.
 
 # Tree condition
 The Stand Visualization System defined four tree forms for each species for use with output from the Forest Vegetation Simulator (FVS) and the fire and fuels extension (FFE): dead due to fire with foliage consumed and downward curled branches, dead due to fire with discolored branches/foliage, dead due to FVS background mortality with orange or brown branches/foliage, live with green branches/foliage. While not perfect, these conditions provide a starting point for a new database. Initial condition options are:
@@ -39,5 +42,9 @@ Tree and crown damage are mostly intended for damage related to insects and dise
 # Time of year
 Most tree species change their appearance through the course of the year. Most obvious are deciduous trees whose foliage changes color in the fall and is absent in the winter and early spring. However, conifers also have different appearances when actively growing compared to periods of slow or no growth. For the initial database, valid time-of-year values are DORMANT, SUMMER, and FALL. For deciduous broadleaf species, DORMANT would have no foliage SUMMER would have green foliage, and FALL would have foliage with characteristic colors for the species. For conifer species DORMANT and FALL would have uniform green foliage and SUMMER would have a mix of dark and light green foliage with lighter green toward the branch tips.
 
+# Putting it all together
+If we assume that the basic crown shape is consistent for a species, the growth form and crown shape become attributes of the species and do not change regardless of the tree age, growing conditions, condition, damage, or time-of-year.
+
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
+Van Pelt, R.; Sillett, S.C. Crown development of coastal pseudotsuga menziesii, including a conceptual model for tall conifers. (Ecol. Monogr. 2008, 78, 283–311)[https://esajournals.onlinelibrary.wiley.com/doi/10.1890/07-0158.1].
