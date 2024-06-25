@@ -78,6 +78,8 @@ The following images are only examples (Douglas-fir PSME). Alpha channels are no
 
 This approach assumes a single level of detail (LOD). I am not familiar with current methods for handling LOD. If separate images are needed to represent various LOD, the database will need to expand.
 
+# Simplifications
+We can simplify the database using genus and growth form. Starting with the master list of 405 species, there are 123 genera, and 5 growth forms. We can create simplified lists that effectively group species together. For almost all applications, the simplified database based on genus will be adequate. The database grouped by growth forms is even simpler but will still distinguish broadleaf and conifer species.
 # Database format
 My intial thought was the the database should be structured as a formal database. However, after thinking through some of the possibilities, it makes sense to have the database stored as a CSV file. CSV files can be queried using SQL but I don't know about how the data should be served. The "complete" database could be delivered via HTTP and the client would do filtering and request specific assets via HTTP. This isn't the most efficient but it makes the server side interaction simple.
 
