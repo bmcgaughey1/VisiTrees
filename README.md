@@ -69,10 +69,11 @@ Assets for each tree record would include:
 * Crown image
 * Overhead image
 
-The following images are only examples. Alpha channels are not set in any of these so they can't be used directly as texture images.
+The following images are only examples (Douglas-fir PSME). Alpha channels are not set in any of these so they can't be used directly as texture images.
 |![Tree image](./assets/PSME_tree.png)<br>Tree|![Bark image](./assets/PSME_bark.png)<br>Bark|![Stump image](./assets/PSME_stump.png)<br>Stump|![Crown image](./assets/PSME_crown.png)<br>Crown|![Overhead image](./assets/PSME_overhead.png)<br>Overhead|
 |:-:|:-:|:-:|:-:|:-:|
 
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
+
 Van Pelt, R.; Sillett, S.C. Crown development of coastal pseudotsuga menziesii, including a conceptual model for tall conifers. (Ecol. Monogr. 2008, 78, 283–311)[https://esajournals.onlinelibrary.wiley.com/doi/10.1890/07-0158.1].
