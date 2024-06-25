@@ -70,7 +70,7 @@ Assets for each tree record would include:
 * Crown image URL
 * Overhead image URL
 
-All asset URLs in the database are relative to the base URL. In the current configuration, all assets are stored in the "assets" folder. It might make sense to have assets arranged by species. In this case, records for each species would have a different base URL. For this repository, the base URL is: https://raw.githubusercontent.com/bmcgaughey1/VisiTrees/main/assets. However, GitHub won't allow you to browse the folder (but will serve specific files from the folder like [PSME_tree.png](https://raw.githubusercontent.com/bmcgaughey1/VisiTrees/main/assets/PSME_tree.png)).
+All asset URLs in the database are relative to the base URL. In the current configuration, all assets are stored in the "assets" folder. It might make sense to have assets arranged by species. In this case, records for each species would have a different base URL. For this repository, the base URL is: <span>https://raw.githubusercontent.com/bmcgaughey1/VisiTrees/main/assets</span>. However, GitHub won't allow you to browse the folder (but will serve specific files from the folder like [PSME_tree.png](https://raw.githubusercontent.com/bmcgaughey1/VisiTrees/main/assets/PSME_tree.png)).
 
 The following images are only examples (Douglas-fir PSME). Alpha channels are not set in any of these so they can't be used directly as texture images.
 |![Tree image](./assets/PSME_tree.png)<br>Tree|![Bark image](./assets/PSME_bark.png)<br>Bark|![Stump image](./assets/PSME_stump.png)<br>Stump|![Crown image](./assets/PSME_crown.png)<br>Crown|![Overhead image](./assets/PSME_overhead.png)<br>Overhead|
