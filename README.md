@@ -63,15 +63,23 @@ The initial version of the database can have the growing condition, tree conditi
 Assets for each tree record would include:
 * RGB crown color
 * RGB bole color
-* Whole tree image
-* Bark image
-* Stump image (cut surface)
-* Crown image
-* Overhead image
+* Base URL
+* Whole tree image URL
+* Bark image URL
+* Stump image (cut surface) URL
+* Crown image URL
+* Overhead image URL
+
+All asset URLs in the database are relative to the base URL. In the current configuration, all assets are stored in the "assets" folder. It might make sense to have assets arranged by species. In this case, records for each species would have a different base URL. For this repository, the base URL is: [https://raw.githubusercontent.com/bmcgaughey1/VisiTrees/main/assets](https://raw.githubusercontent.com/bmcgaughey1/VisiTrees/main/assets).
 
 The following images are only examples (Douglas-fir PSME). Alpha channels are not set in any of these so they can't be used directly as texture images.
 |![Tree image](./assets/PSME_tree.png)<br>Tree|![Bark image](./assets/PSME_bark.png)<br>Bark|![Stump image](./assets/PSME_stump.png)<br>Stump|![Crown image](./assets/PSME_crown.png)<br>Crown|![Overhead image](./assets/PSME_overhead.png)<br>Overhead|
 |:-:|:-:|:-:|:-:|:-:|
+
+This approach assumes a single level of detail (LOD). I am not familiar with current methods for handling LOD. If separate images are needed to represent various LOD, the database will need to expand.
+
+# Database format
+My intial thought was the the database should be structured as a formal database. However, after thinking through some of the possibilities, it makes sense to have the database stored as a CSV file. CSV files can be queried using SQL but I don't know about how the data should be served. The "complete" database could be delivered via HTTP and the client would do filtering and request specific assets via HTTP. This isn't the most efficient but it makes the server side interaction simple.
 
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
