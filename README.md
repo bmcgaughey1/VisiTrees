@@ -19,13 +19,24 @@ The most common of these are excurrent (conifers) and decurrent (hardwoods).
 
 [Tree growth forms](./images/CrownArchitectures.png)
 
-Given these basic growth forms, Coder defines a series of generalized crown shapes useful for developing tree models. There may be more detail in these shapes than needed for abstract tree models. In addition, many (most?) species exhibit different forms depending on their competative environment, age, and degree of crown damage. Nonetheless, these forms provide a set of terminology useful for our tree database.
+Given these basic growth forms, Coder defines a series of generalized crown shapes useful for developing tree models. There may be more detail in these shapes than needed for abstract tree models. In addition, many (most?) species exhibit different forms depending on their competative environment, age, and degree of crown damage. Nonetheless, these forms provide a set of terminology useful for our tree database. The basic crown shapes are:
+* Pyramidal
+* Conical
+* Columnar (spindle)
+* Fastigate
+* Ellisoid
+* Ovoid
+* Circular (globose)
+* Broad
+* Vase
+* Umbrella
+* Irregular
+* Weeping
 
-![Tree crown shape names](./images/CrownShapes.png)
-![Tree crown shapes](./images/CrownShapeImages.png)
+[Tree crown shapes](./images/CrownShapeImages.png)
 
 # Growing condition
-As mentioned above, most tree species have different crown shapes when grown in the open compared to a closed stand. Stand density may be driven by the overall climatic conditions or through managment activites or disturbance. For parts of the country where mositure is the limiting growth factor, open stand conditions are common and trees tend to have longer and wider crowns. In contrast, moister conditions lead to more closed-canopy stands where trees tend to have more foliage near the top of the tree and, overall, narrower crowns.
+As mentioned above, most tree species have different crown shapes when grown in the open compared to a closed stand. Stand density may be driven by the overall climatic conditions or through managment activites or disturbance. For parts of the country where mositure is the limiting growth factor, open stand conditions are common and trees tend to have longer and wider crowns. In contrast, moister conditions lead to more closed-canopy stands where trees tend to have more foliage near the top of the tree and, overall, narrower crowns. Basic growing condition options are OPEN and CLOSED.
 
 # Tree condition
 The Stand Visualization System defined four tree forms for each species for use with output from the Forest Vegetation Simulator (FVS) and the fire and fuels extension (FFE): dead due to fire with foliage consumed and downward curled branches, dead due to fire with discolored branches/foliage, dead due to FVS background mortality with orange or brown branches/foliage, live with green branches/foliage. While not perfect, these conditions provide a starting point for a new database. Initial condition options are:
@@ -37,13 +48,15 @@ The Stand Visualization System defined four tree forms for each species for use 
 The latter two conditions are meant for use with fire simulations. The first dead condition is meant to represent natural mortality. The "old dead" condition represents snags and could be the result of natural mortality or fire-related mortality.
 
 # Damage class
-Tree and crown damage are mostly intended for damage related to insects and disease. Damage class could also be used for fire-related damage but fire effects are represented in the tree condition options. Adding a full range of damage classes may represent too much detail and would require several images for each species to represent various types and levels of damage. For the initial database, all species only have records with damage class set to NONE.
+Tree and crown damage are mostly intended for damage related to insects and disease. Damage class could also be used for fire-related damage but fire effects are represented in the tree condition options. Adding a full range of damage classes may be difficult given the possible types and severity of damage. This would, most likely, represent too much detail and could require tens of additional images for each species to represent various types and levels of damage. Such images would be nearly impossible to capture in the field so some type of algorithmic manipulation would need to be developed. For the initial database, all species only have records with damage class set to NONE.
 
 # Time of year
 Most tree species change their appearance through the course of the year. Most obvious are deciduous trees whose foliage changes color in the fall and is absent in the winter and early spring. However, conifers also have different appearances when actively growing compared to periods of slow or no growth. For the initial database, valid time-of-year values are DORMANT, SUMMER, and FALL. For deciduous broadleaf species, DORMANT would have no foliage SUMMER would have green foliage, and FALL would have foliage with characteristic colors for the species. For conifer species DORMANT and FALL would have uniform green foliage and SUMMER would have a mix of dark and light green foliage with lighter green toward the branch tips.
 
 # Putting it all together
-If we assume that the basic crown shape is consistent for a species, the growth form and crown shape become attributes of the species and do not change regardless of the tree age, growing conditions, condition, damage, or time-of-year.
+If we assume that the basic crown shape is consistent for a species, the growth form and crown shape become attributes of the species and do not change regardless of the growing condition, tree condition, damage class, or time of year. The record structure for our database looks like this:
+![Tree record](./images/database.png)
+The initial version of the database can have the growing condition, tree condition, damage class, or time of year all set to NULL. A "complete" database, with assests to represent every combination of parameters, would have 144 records (only 72 records if damage class is dropped completely) for each species. While this seems overwhelming, the "complete" database would support nearly all types of visualization. In addition, the database could be populate as needs develop starting with records for LIVE trees only and adding additional attributes as the need arises.
 
 # References
 Coder, Kim D. 2018. Tree anatomy: Defining trees & forms. Warnell School of Forestry & Natural Resources, University of Georgia, (Outreach Publication WSFNR-19-35)[https://bugwoodcloud.org/resource/files/15277.pdf]. Pp.20.
