@@ -58,7 +58,7 @@ If we assume that the basic crown shape is consistent for a species, the growth 
 
 ![Tree record](./images/database.png)
 
-The initial version of the database can have the growing condition, tree condition, damage class, or time of year all set to [NULL](## "blank field or a specific value that works with a database query"). A "complete" database, with assests to represent every combination of parameters, would have 144 records (only 72 records if damage class is dropped completely) for each species. While this seems overwhelming, the "complete" database would support nearly all types of visualization. In addition, the database could be populate as needs develop starting with records for LIVE trees only and adding additional attributes as the need arises.
+The initial version of the database can have the growing condition, tree condition, damage class, or time of year all set to [NULL](## "blank field or a specific value that works with a database query"). A "complete" database, with assests to represent every combination of parameters, would have 144 records (only 72 records if damage class is dropped completely) for each species. While this seems overwhelming, the "complete" database would support nearly all types of visualization. In addition, the database could be populated as needs develop starting with records for LIVE trees only and adding additional attributes as the need arises.
 
 Assets for each tree record would include:
 * RGB crown color
